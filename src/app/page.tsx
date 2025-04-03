@@ -1,95 +1,174 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import React from 'react'
 
-export default function Home() {
+const page = () => {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <>
+    <head>
+        <title>
+            Imminent - The most spectacular coming soon template!
+        </title>
+        <meta content="yes" name="apple-mobile-web-app-capable" />
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+        <meta content="ThemeWagon" name="author" />
+        <meta content="The most spectacular coming soon template!" name="description" />
+        <meta content="Comming Soon, Responsive, Landing Page, One Page" name="keywords" />
+        <meta content="The most spectacular coming soon template!" />
+        <meta content="ThemeWagon" />
+        <meta content="ThemeWagon" />
+        <meta content="website" />
+        <meta content="index.html" />
+        <meta content="summary" name="twitter:card" />
+        <meta content="@themewagon" name="twitter:site" />
+        <meta content="@themewagon" name="twitter:creator" />
+        <meta content="ThemeWagon" name="twitter:title" />
+        <meta content="Imminent - The most spectacular coming soon template!" name="twitter:description" />
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+        <link href="favicon.png" rel="shortcut icon" type="image/png" />
+
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,900' rel='stylesheet' type='text/css' />
+        <link href="css/loader.css" rel="stylesheet" type="text/css" />
+        <link href="css/normalize.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <script src="js/jquery.js"></script>
+    </head>
+    <body>
+        <div className="preloader">
+            <div className="loading">
+                <h2>
+                    Loading...
+                </h2>
+                <span className="progress"></span>
+            </div>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+
+        <div className="wrapper">
+            <ul className="scene unselectable" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="25" data-scalar-y="15" id="scene">
+                <li className="layer" data-depth="0.00">
+                </li>
+                
+
+                <li className="layer" data-depth="0.10">
+                    <div className="background">
+                    </div>
+                </li>
+
+                
+
+                <li className="layer" data-depth="0.20">
+                    <div className="title">
+                        <h2>
+                            IMMINENT
+                        </h2>
+                        <span className="line"></span>
+                    </div>
+                </li>
+
+                <li className="layer" data-depth="0.25">
+                    <div className="sphere">
+                        <img alt="sphere" src="images/sphere.png" />
+                    </div>
+                </li>
+
+                <li className="layer" data-depth="0.30">
+                    <div className="hero">
+                        <h1 id="countdown">
+                            The most spectacular coming soon template!
+                        </h1>
+
+                        <p className="sub-title">
+                            The most spectacular coming soon template!
+                        </p>
+                    </div>
+                </li>
+
+                <li className="layer" data-depth="0.40">
+                    <div className="depth-1 flake1">
+                        <img alt="flake" src="images/flakes/depth1/flakes1.png" />
+                    </div>
+
+                    <div className="depth-1 flake2">
+                        <img alt="flake" src="images/flakes/depth1/flakes2.png" />
+                    </div>
+
+                    <div className="depth-1 flake3">
+                        <img alt="flake" src="images/flakes/depth1/flakes3.png" />
+                    </div>
+
+                    <div className="depth-1 flake4">
+                        <img alt="flake" src="images/flakes/depth1/flakes4.png" />
+                    </div>
+                </li>
+
+                <li className="layer" data-depth="0.50">
+                    <div className="depth-2 flake1">
+                        <img alt="flake" src="images/flakes/depth2/flakes1.png" />
+                    </div>
+
+                    <div className="depth-2 flake2">
+                        <img alt="flake" src="images/flakes/depth2/flakes2.png" />
+                    </div>
+                </li>
+
+                <li className="layer" data-depth="0.60">
+                    <div className="depth-3 flake1">
+                        <img alt="flake" src="images/flakes/depth3/flakes1.png" />
+                    </div>
+
+                    <div className="depth-3 flake2">
+                        <img alt="flake" src="images/flakes/depth3/flakes2.png" />
+                    </div>
+
+                    <div className="depth-3 flake3">
+                        <img alt="flake" src="images/flakes/depth3/flakes3.png" />
+                    </div>
+
+                    <div className="depth-3 flake4">
+                        <img alt="flake" src="images/flakes/depth3/flakes4.png" />
+                    </div>
+                </li>
+
+                <li className="layer" data-depth="0.80">
+                    <div className="depth-4">
+                        <img alt="flake" src="images/flakes/depth4/flakes.png" />
+                    </div>
+                </li>
+
+                <li className="layer" data-depth="1.00">
+                    <div className="depth-5">
+                        <img alt="flake" src="images/flakes/depth5/flakes.png" />
+                    </div>
+                </li>
+
+                <li className="layer" data-depth="0.20">
+                    <div className="contact">
+                        <ul className="icons">
+                            <li>
+                                <a className="behance" href="#"><i className="fa fa-behance"></i></a>
+                            </li>
+
+                            <li>
+                                <a className="twitter" href="#"><i className="fa fa-twitter"></i></a>
+                            </li>
+
+                            <li>
+                                <a className="dribbble" href="#"><i className="fa fa-dribbble"></i></a>
+                            </li>
+                        </ul>
+                        Theme by <a href="https://themewagon.com/" target="_blank">ThemeWagon</a>
+                        <a className="mail" href="mailto:info@example.com?subject=Hi%20ThemeWagon!">info@example.com</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <script src="js/plugins.js"></script> 
+        <script src="js/jquery.countdown.min.js"></script> 
+        <script src="js/main.js"></script>
+
+    </body>
+    </>
+  )
 }
+
+export default page
