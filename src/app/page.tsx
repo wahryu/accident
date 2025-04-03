@@ -17,13 +17,10 @@ const Home = () => {
                 <li className="layer" data-depth="0.00">
                 </li>
                 
-
                 <li className="layer" data-depth="0.10">
                     <div className="background">
                     </div>
                 </li>
-
-                
 
                 <li className="layer" data-depth="0.20">
                     <div className="title">
